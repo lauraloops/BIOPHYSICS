@@ -1,0 +1,28 @@
+Alanine Scanning Protocol – Spike RBD–ACE2 Interface
+
+1. Starting structure:
+   - 6m0j_prepared.pdb / 6m0j_prepared.pdbqt
+   - Chains A (RBD) and E (ACE2)
+   - Hydrogens and Gasteiger charges included
+
+2. Interface definition:
+   - Fixed residue lists (see interface_chain_A.txt and interface_chain_E.txt)
+   - Interface residues were not re-identified after mutation
+
+3. Mutation model:
+   - One residue at a time mutated to alanine
+   - Backbone coordinates kept fixed
+   - Side-chain atoms beyond CB removed
+   - No structural relaxation or minimization
+
+4. Energy evaluation:
+   - Same force field parameters as WT
+   - Same electrostatic, van der Waals and solvation models
+   - Interaction energies recomputed using int_energies_AE.py
+
+5. ΔΔG definition:
+   ΔΔG_res = ΔG_mutant − ΔG_WT
+
+6. Interpretation:
+   - ΔΔG > 0: destabilizing mutation
+   - ΔΔG < 0: stabilizing mutation
