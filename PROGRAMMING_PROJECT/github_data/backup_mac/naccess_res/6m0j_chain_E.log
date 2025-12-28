@@ -1,0 +1,40 @@
+ ACCALL - Accessibility calculations
+ MAX RESIDUES     5000
+ MAX ATOMS/RES     100
+ PDB FILE INPUT 6m0j_chain_E.pdb
+ PROBE SIZE       1.40
+ Z-SLICE WIDTH   0.050
+ VDW RADII FILE /home/eira/Desktop/UPC/3r/BP/project/BioPhysics/Energy_analysis_project/NACCESS/NACCESS/vdw.radii
+ EXCL HETATOMS
+ EXCL HYDROGENS
+ EXCL WATERS
+ READVDW  32 residues input
+ UNKNOWN residue type.............> HIE E 519 
+ NON-STANDARD atom.| N  | in residue> HIE E 519 
+ ASSUMED vdw of  N   in HIE E 519  =  1.65 (same as ALA)
+ NON-STANDARD atom.| CA | in residue> HIE E 519 
+ ASSUMED vdw of  CA  in HIE E 519  =  1.87 (same as ALA)
+ NON-STANDARD atom.| C  | in residue> HIE E 519 
+ ASSUMED vdw of  C   in HIE E 519  =  1.76 (same as ALA)
+ NON-STANDARD atom.| O  | in residue> HIE E 519 
+ ASSUMED vdw of  O   in HIE E 519  =  1.40 (same as ALA)
+ NON-STANDARD atom.| CB | in residue> HIE E 519 
+ ASSUMED vdw of  CB  in HIE E 519  =  1.87 (same as ALA)
+ NON-STANDARD atom.| CG | in residue> HIE E 519 
+ ASSUMED vdw of  CG  in HIE E 519  =  1.87 (same as ARG)
+ NON-STANDARD atom.| ND1| in residue> HIE E 519 
+ ASSUMED vdw of  ND1 in HIE E 519  =  1.65 (same as HIS)
+ NON-STANDARD atom.| CD2| in residue> HIE E 519 
+ ASSUMED vdw of  CD2 in HIE E 519  =  1.76 (same as HIS)
+ NON-STANDARD atom.| CE1| in residue> HIE E 519 
+ ASSUMED vdw of  CE1 in HIE E 519  =  1.76 (same as HIS)
+ NON-STANDARD atom.| NE2| in residue> HIE E 519 
+ ASSUMED vdw of  NE2 in HIE E 519  =  1.65 (same as GLN)
+ ADDED VDW RADII
+ CHAINS       1
+ RESIDUES   194
+ ATOMS     1712
+ SOLVA: PROGRAM ENDS CORRECTLY
+ CALCULATED ATOMIC ACCESSIBILITES
+ RELATIVE (STANDARD) ACCESSIBILITIES READFOR  20 AMINO ACIDS
+ SUMMED ACCESSIBILITIES OVER RESIDUES

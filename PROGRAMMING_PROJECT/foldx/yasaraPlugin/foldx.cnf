@@ -1,0 +1,19 @@
+# This is the configuration file for the YASARA FoldX plugin
+# You can edit it manually or from YASARA with Analyze > FoldX4 > Configure plugin for the FoldX executable and rotabase.txt files
+
+# absolute path of the precompiled FoldX program
+FOLDX_BIN = 
+
+# absolute path for the rotabase file
+FOLDX_ROTABASE = 
+
+# absolute path for the cache directory
+FOLDX_TMP = foldx_cache
+
+# LoopX Database
+LOOPX_DB = none
+LOOPX_HOST = none
+LOOPX_USER = none
+LOOPX_PASS = none
+LOOPX_PORT = 0
+LOOPX_PDBDIR = none

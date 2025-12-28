@@ -1,0 +1,5 @@
+metric,value
+interaction_chains,A-E
+interaction_total_kcal_per_mol,1.000
+interaction_fxout,Interaction_6m0j_prepared_Repair_AC.fxout
+repaired_pdb,6m0j_prepared_Repair.pdb
