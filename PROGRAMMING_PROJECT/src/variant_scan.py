@@ -22,15 +22,15 @@ Path(f"{RESULTS}/energies").mkdir(parents=True, exist_ok=True)
 
 # -----------------------
 # Mutations (Variants of concern)
-# Chain A is Spike RBD in your system
+# Chain E is Spike RBD (correct mapping)
 # -----------------------
 MUTATIONS = [
-    ("Alpha", "A", 501, "TYR"),  # N501Y
-    ("Beta",  "A", 417, "ASN"),  # K417N
-    ("Beta",  "A", 484, "LYS"),  # E484K
-    ("Beta",  "A", 501, "TYR"),  # N501Y (again, ok for labeling)
-    ("Delta", "A", 452, "ARG"),  # L452R
-    ("Delta", "A", 478, "LYS"),  # T478K
+    ("Alpha", "E", 501, "TYR"),  # N501Y
+    ("Beta",  "E", 417, "ASN"),  # K417N
+    ("Beta",  "E", 484, "LYS"),  # E484K
+    ("Beta",  "E", 501, "TYR"),  # N501Y
+    ("Delta", "E", 452, "ARG"),  # L452R
+    ("Delta", "E", 478, "LYS"),  # T478K
 ]
 
 AA3_TO_AA1 = {

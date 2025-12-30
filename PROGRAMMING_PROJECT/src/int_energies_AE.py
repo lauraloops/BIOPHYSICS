@@ -219,9 +219,10 @@ def main():
     out_csv    = os.environ.get("OUTCSV", "interaction_energies_RBD_ACE2.csv")
 
     vdw_file   = os.path.join("data", "vdwprm")
-    rsa_complex = os.path.join("results", "naccess", "6m0j_prepared.rsa")
-    rsa_A       = os.path.join("results", "naccess", "6m0j_chain_A.rsa")
-    rsa_E       = os.path.join("results", "naccess", "6m0j_chain_E.rsa")
+    rsa_complex = os.environ.get("RSA_COMPLEX", os.path.join("results", "naccess", "6m0j_prepared.rsa"))
+    rsa_A       = os.environ.get("RSA_A",       os.path.join("results", "naccess", "6m0j_chain_A.rsa"))
+    rsa_E       = os.environ.get("RSA_E",       os.path.join("results", "naccess", "6m0j_chain_E.rsa"))
+
 
     cutoff_contact = 6.0  # Å (teacher)
     cutoff_energy  = 8.0  # Å
@@ -301,13 +302,13 @@ def main():
         res_energy_E[resE.id[1]] = (Ee_tot, Ev_tot, dSolv, Etot)
 
     # Print tables
-    print("\nResidue interaction energies for chain A (RBD):")
+    print("\nResidue interaction energies for chain A (ACE2):")
     print("ResID   ΔG_elec   ΔG_vdw   ΔG_solv(Δ)   ΔG_total   [kcal/mol]")
     for resid in sorted(res_energy_A):
         Ee, Ev, Es, Et = res_energy_A[resid]
         print(f"{resid:4d}  {Ee:8.3f} {Ev:8.3f} {Es:11.3f} {Et:10.3f}")
 
-    print("\nResidue interaction energies for chain E (ACE2):")
+    print("\nResidue interaction energies for chain E (RBD):")
     print("ResID   ΔG_elec   ΔG_vdw   ΔG_solv(Δ)   ΔG_total   [kcal/mol]")
     for resid in sorted(res_energy_E):
         Ee, Ev, Es, Et = res_energy_E[resid]
