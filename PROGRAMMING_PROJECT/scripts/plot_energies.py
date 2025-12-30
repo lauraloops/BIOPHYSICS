@@ -29,12 +29,12 @@ plt.bar(
     df_A[TOTAL_COL]
 )
 plt.axhline(0, color="black", linewidth=0.8)
-plt.title("RBD (Chain A) – Residue Interaction Free Energies")
+plt.title("ACE2 (Chain A) – Residue Interaction Free Energies")
 plt.ylabel("ΔG_total (kcal/mol)")
 plt.xlabel("Residue")
 plt.xticks(rotation=90)
 plt.tight_layout()
-plt.savefig("RBD_interface_energies.png", dpi=300)
+plt.savefig("ACE2_interface_energies.png", dpi=300)
 plt.close()
 
 # ---------------------------
@@ -46,31 +46,31 @@ plt.bar(
     df_E[TOTAL_COL]
 )
 plt.axhline(0, color="black", linewidth=0.8)
-plt.title("ACE2 (Chain E) – Residue Interaction Free Energies")
+plt.title("RBD (Chain E) – Residue Interaction Free Energies")
 plt.ylabel("ΔG_total (kcal/mol)")
 plt.xlabel("Residue")
 plt.xticks(rotation=90)
 plt.tight_layout()
-plt.savefig("ACE2_interface_energies.png", dpi=300)
+plt.savefig("RBD_interface_energies.png", dpi=300)
 plt.close()
 
-print("Plots saved: RBD_interface_energies.png, ACE2_interface_energies.png")
+print("Plots saved: ACE2_interface_energies.png, RBD_interface_energies.png")
 
 # ---------------------------
 # Top stabilizers and destabilizers
 # ---------------------------
-print("\nTop 5 stabilizing residues – RBD (most negative ΔG):")
+print("\nTop 5 stabilizing residues – ACE2 (most negative ΔG):")
 print(df_A.nsmallest(5, TOTAL_COL))
 
-print("\nTop 5 destabilizing residues – RBD (most positive ΔG):")
+print("\nTop 5 destabilizing residues – ACE2 (most positive ΔG):")
 print(df_A.nlargest(5, TOTAL_COL))
 
-print("\nTop 5 stabilizing residues – ACE2:")
+print("\nTop 5 stabilizing residues – RBD:")
 print(df_E.nsmallest(5, TOTAL_COL))
 
-print("\nTop 5 destabilizing residues – ACE2:")
+print("\nTop 5 destabilizing residues – RBD:")
 print(df_E.nlargest(5, TOTAL_COL))
 
 # Optional: export per-chain CSVs
-df_A.to_csv(os.path.join(results_dir, "RBD_interface_energies.csv"), index=False)
-df_E.to_csv(os.path.join(results_dir, "ACE2_interface_energies.csv"), index=False)
+df_A.to_csv(os.path.join(results_dir, "ACE2_interface_energies.csv"), index=False)
+df_E.to_csv(os.path.join(results_dir, "RBD_interface_energies.csv"), index=False)

@@ -1,4 +1,4 @@
-REMARK  Name = results/variants/mutants/Alpha_E501_TYR.pdb
+REMARK  Name = /home/laura/Desktop/BIOPHYSICS/PROGRAMMING_PROJECT/results/variants/mutants/Alpha_E501_TYR.pdb
 REMARK  2704 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
 REMARK    1  A    between atoms: CA_2  and  C_3
@@ -6019,7 +6019,7 @@ ENDBRANCH 8621708
 ENDBRANCH 861 862
 ENDBRANCH   1 859
 TORSDOF 799
-REMARK  Name = results/variants/mutants/Alpha_E501_TYR.pdb
+REMARK  Name = /home/laura/Desktop/BIOPHYSICS/PROGRAMMING_PROJECT/results/variants/mutants/Alpha_E501_TYR.pdb
 REMARK  2704 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
 REMARK    1  A    between atoms: CA_2  and  C_3
@@ -14672,7 +14672,7 @@ ENDBRANCH31623163
 ENDBRANCH15843162
 ENDBRANCH   31584
 TORSDOF 1388
-REMARK  Name = results/variants/mutants/Alpha_E501_TYR.pdb
+REMARK  Name = /home/laura/Desktop/BIOPHYSICS/PROGRAMMING_PROJECT/results/variants/mutants/Alpha_E501_TYR.pdb
 REMARK  2704 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
 REMARK    1  A    between atoms: CA_2  and  C_3
@@ -17385,7 +17385,7 @@ ROOT
 ATOM      1  CB  HIS A 228     -10.359  28.717 -34.193  0.00  0.00    +0.000 C 
 ENDROOT
 TORSDOF 0
-REMARK  Name = results/variants/mutants/Alpha_E501_TYR.pdb
+REMARK  Name = /home/laura/Desktop/BIOPHYSICS/PROGRAMMING_PROJECT/results/variants/mutants/Alpha_E501_TYR.pdb
 REMARK  2704 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
 REMARK    1  A    between atoms: CA_2  and  C_3
@@ -22676,7 +22676,7 @@ ENDBRANCH15421543
 ENDBRANCH15411542
 ENDBRANCH 1271541
 TORSDOF 517
-REMARK  Name = results/variants/mutants/Alpha_E501_TYR.pdb
+REMARK  Name = /home/laura/Desktop/BIOPHYSICS/PROGRAMMING_PROJECT/results/variants/mutants/Alpha_E501_TYR.pdb
 REMARK  2704 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
 REMARK    1  A    between atoms: CA_2  and  C_3

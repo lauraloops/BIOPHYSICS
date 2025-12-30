@@ -35,3 +35,7 @@ __MACOSX/
 venv/
 env/
 ENV/
+
+# Project specific
+BioPhysics/
+github_data/
